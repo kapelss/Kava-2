@@ -7,6 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="player-setup" class="popup">
+    <div class="popup-content">
+      <h2>Enter players</h2>
+      <label for="playerCount">Number of players:</label>
+      <input type="number" id="playerCount" min="1" max="10" value="2">
+      <button onclick="generatePlayerInputs()">Set players</button>
+
+      <form id="playerForm" onsubmit="startGame(event)">
+        <div id="playerInputs"></div>
+        <button type="submit">Start the game</button>
+      </form>
+    </div>
+  </div>
+  <div class="score">
+    <p></p>
+  </div>
   <div class="container">
     <div class="card" id="flip-card">
       <div class="card-inner">
@@ -20,7 +36,7 @@
     </div>
     <button class="cs-button" onclick="drawCard()">Draw card</button>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 
