@@ -3,7 +3,26 @@ const forfeitCard = [
   {name: 'Dzer tu!'},
   {name: 'Dzer pa labi!'},
   {name: 'Dzer pa kreisi!'},
-  {name: 'Pēdēja nagla!'}
+  {name: 'Pēdēja nagla!'},
+  {name: 'Pēdēja nagla!'},
+  {name: 'Valstis!'},
+  {name: 'Oligarhs!'},
+  {name: 'Zvans draugam!'},
+  {name: 'Influenceris!'},
+  {name: 'Ārpus zonas!'},
+  {name: 'Jautājums!'},
+  {name: 'Kreiais āķis!'},
+  {name: 'Pāris!'},
+  {name: 'Dzer visi!'},
+  {name: 'Klusums!'},
+  {name: 'Uzmini dziesmu!'},
+  {name: 'Dzer pats!'},
+  {name: 'Prosta iedzer!'},
+  {name: 'Tu esi mīkstais!'},
+  {name: 'Zem 180cm!'},
+  {name: 'Virs 180cm!'},
+  {name: 'Dāmas!'},
+  {name: 'Vīri!'},
 ];
 
 let flipped = false;
@@ -33,3 +52,4 @@ window.onload = () => {
   const randomForfeit = Math.floor(Math.random() * forfeitCard.length);
   currentForfeit = forfeitCard[randomForfeit].name;
 };
+
